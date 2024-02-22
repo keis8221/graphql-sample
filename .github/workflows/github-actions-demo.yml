@@ -12,8 +12,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - uses: kamilkisiela/graphql-inspector@master
+      - name: graphql-inspector
+        uses: kamilkisiela/graphql-inspector@main
         with:
+          github-token: ${{ secrets.GITHUBTOKEN }}
           schema: "master:schema.graphqls"
             #    notifications:
             # slack: 'https://hooks.slack.com/services/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'
