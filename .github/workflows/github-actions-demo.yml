@@ -6,13 +6,8 @@ jobs:
     name: Check Schema
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@main
-      - name: kamilkisiela/graphql-inspector@main
+      - uses: kamilkisiela/graphql-inspector@main
         with:
           schema: 'main:schema.graphql'
-schema: schema.graphql
-diff:
-  annotations: true
 notifications:
   slack: 'https://hooks.slack.com/services/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'
