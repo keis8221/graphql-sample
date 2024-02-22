@@ -22,6 +22,4 @@ ENV CGO_ENABLED=1 \
 # ルートディレクトリを作業ディレクトリにコピー
 COPY . $APP_ROOT
 
-EXPOSE 8080
-
 
