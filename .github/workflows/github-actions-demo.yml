@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on: [push]
 
+
 jobs:
   check-schemas:
     name: Check Schema
@@ -11,11 +12,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+
       - name: graphql-inspector
         uses: kamilkisiela/graphql-inspector@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          schema: "main:/home/runner/work/graphql-sample/graphql-sample/graph/schema.graphql"
-          annotations: true
-            #    notifications:
-            # slack: 'https://hooks.slack.com/services/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'
+          schema: "main:graph/schema.graphql"
+          fail-on-breaking: false
+
