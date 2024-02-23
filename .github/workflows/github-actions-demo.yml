@@ -3,8 +3,6 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on: [push]
 
-notifications:
-  slack: https://hooks.slack.com/services/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
 
 jobs:
   check-schemas:
