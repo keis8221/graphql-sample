@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - run: |
-          echo $GITHUB_WORKSPACE
       - name: graphql-inspector
         uses: kamilkisiela/graphql-inspector@master
         with:
