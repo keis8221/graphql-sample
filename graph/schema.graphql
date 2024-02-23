@@ -13,6 +13,7 @@ type User {
   id: ID!
   name: String!
   age: Int!
+  email: String!
 }
 
 type Query {
