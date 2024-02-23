@@ -1,3 +1,5 @@
+on: [push]
+
 schema: "main:graph/schema.graphql"
 
 others:
