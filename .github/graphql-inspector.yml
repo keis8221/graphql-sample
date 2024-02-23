@@ -1,2 +1,4 @@
+branch: master
 notifications:
   slack: https://hooks.slack.com/services/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
+diff: true
