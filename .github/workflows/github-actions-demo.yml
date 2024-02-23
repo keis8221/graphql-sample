@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
+      - run: |
+        cd /home/runner/work/graphql-sample/graphql-sample/
+        ls
       - name: graphql-inspector
         uses: kamilkisiela/graphql-inspector@master
         with:
